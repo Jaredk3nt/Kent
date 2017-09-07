@@ -27,11 +27,14 @@ $nav-min-height: 3em !default;
     &.accented {
         border-top: $nav-accent-color solid $nav-accent-weight;
     }
+    &.shadow {
+        box-shadow: 1px 4px 8px $grey-very-light;
+    }
 
     .k-logo {
         display: flex;
         align-items: center;
-        padding: 0.5em 1em;
+        padding: 0.5em 1em 0.5em 0em;
         cursor: pointer;
         font-weight: $weight-bold;
     }
@@ -41,10 +44,10 @@ $nav-min-height: 3em !default;
         align-items: stretch;
         width: 100%;
 
-        &.k-nav-end {
+        &.nav-end {
             justify-content: flex-end;
         }
-        &.k-nav-center {
+        &.nav-center {
             justify-content: center;
             align-items: center;
         }
@@ -59,7 +62,7 @@ $nav-min-height: 3em !default;
             &:hover {
                 background-color: $nav-hover-color;
             }
-            &.k-is-dropdown {
+            &.is-dropdown {
                 padding: 0em;
 
                 .k-dropdown-title {

@@ -18,10 +18,11 @@ $gap: 0.5rem !default;
 
     .k-column {
         display: block;
+        position: relative;
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0;
-        margin: $gap;
+        padding: $gap;
         box-sizing: border-box;
 
         &.full-width {

@@ -6,17 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kent Tester</title>
     <link rel="stylesheet" href="css/kent.css">
+    <style media="screen">
+        .test-grid-item {
+            width: 100%;
+            height: 100%;
+            background-color: #77B6EA;
+            padding: 1em 1.5em;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="k-nav accented">
+    <div class="k-nav shadow">
         <div class="k-container">
 
             <div class="k-logo">
-                Kent
+                <img src="media/kent-logo.png" alt="KENT" style="height: 1.2em">
             </div>
-            <div class="k-nav-list">
-                <div class="k-nav-item k-is-dropdown">
+            <div class="k-nav-list nav-end">
+                <div class="k-nav-item is-dropdown">
+                    <div class="k-dropdown-title">
+                        Blog
+                    </div>
+                    <div class="k-dropdown accented">
+                        <a class="k-dropdown-item">
+                            Dang k-nav can even have dropdowns!
+                        </a>
+                        <a class="k-dropdown-item">
+                            How cool is that?
+                        </a>
+                    </div>
+                </div>
+                <div class="k-nav-item is-dropdown">
                     <div class="k-dropdown-title">
                         Docs
                     </div>
@@ -29,9 +51,6 @@
                         </a>
                     </div>
                 </div>
-                <div class="k-nav-item">
-                    Github
-                </div>
             </div>
 
         </div>
@@ -43,7 +62,7 @@
             <h2>We have headings (this ones an h2)</h2>
             <p>Its all pretty straight forward. We can write all sorts of styled text inside of a .k-type element. This makes our paragraphs and headers look all professional like. We are also inside of a k-container which constricts our content to 70% of the page, but it stays centered so your page can look modern as heck.</p>
             <blockquote>
-                Yeah we even have cool blockquotes to make what we are saying seem cool and important
+                Yeah we even have cool blockquotes to make what we are saying seem cool and important. - Jared
             </blockquote>
             <h3>We have lists! (this ones an h3 btw)</h3>
             <ul>
@@ -62,20 +81,120 @@
             <h2>k-grid system</h2>
         </div>
         <div class="k-grid">
+            <div class="k-column one-half">
+                <div class="test-grid-item ">
+                    k-column one-half
+                </div>
+            </div>
+            <div class="k-column one-half">
+                <div class="test-grid-item ">
+                    k-column one-half
+                </div>
+            </div>
+        </div>
+        <div class="k-grid">
+            <div class="k-column one-quarter">
+                <div class="test-grid-item ">
+                    k-column one-quarter
+                </div>
+            </div>
+            <div class="k-column one-half">
+                <div class="test-grid-item ">
+                    k-column one-half
+                </div>
+            </div>
+            <div class="k-column one-quarter">
+                <div class="test-grid-item ">
+                    k-column one-quarter
+                </div>
+            </div>
+        </div>
+        <div class="k-grid">
+            <div class="k-column one-third">
+                <div class="test-grid-item ">
+                    k-column one-third
+                </div>
+            </div>
+            <div class="k-column one-third">
+                <div class="test-grid-item ">
+                    k-column one-third
+                </div>
+            </div>
+            <div class="k-column one-third">
+                <div class="test-grid-item ">
+                    k-column one-third
+                </div>
+            </div>
+        </div>
+        <div class="k-type">
+            <h2>Buttons</h2>
+        </div>
+        <div class="k-grid">
             <div class="k-column center-content">
                 <div class="k-button">Button</div>
             </div>
             <div class="k-column center-content">
-                <div class="k-button primary">Button Info</div>
+                <div class="k-button primary">Info</div>
             </div>
             <div class="k-column center-content">
-                <a type="button" class="k-button warning">Button Warning</a>
+                <a type="button" class="k-button warning">Warning</a>
             </div>
             <div class="k-column center-content">
-                <button type="button" class="k-button error">Button Error</button>
+                <button type="button" class="k-button error">Error</button>
             </div>
             <div class="k-column center-content">
-                <button type="button" class="k-button success">Button Success</button>
+                <button type="button" class="k-button success">Success</button>
+            </div>
+        </div>
+        <div class="k-grid">
+            <div class="k-column center-content">
+                <div class="k-button rounded">Button</div>
+            </div>
+            <div class="k-column center-content">
+                <div class="k-button primary rounded">Info</div>
+            </div>
+            <div class="k-column center-content">
+                <a type="button" class="k-button warning rounded">Warning</a>
+            </div>
+            <div class="k-column center-content">
+                <button type="button" class="k-button error rounded">Error</button>
+            </div>
+            <div class="k-column center-content">
+                <button type="button" class="k-button success rounded">Success</button>
+            </div>
+        </div>
+        <div class="k-grid">
+            <div class="k-column center-content">
+                <div class="k-button bordered">Button</div>
+            </div>
+            <div class="k-column center-content">
+                <div class="k-button primary bordered">Info</div>
+            </div>
+            <div class="k-column center-content">
+                <a type="button" class="k-button warning bordered">Warning</a>
+            </div>
+            <div class="k-column center-content">
+                <button type="button" class="k-button error bordered">Error</button>
+            </div>
+            <div class="k-column center-content">
+                <button type="button" class="k-button success bordered">Success</button>
+            </div>
+        </div>
+        <div class="k-grid">
+            <div class="k-column center-content">
+                <div class="k-button bordered rounded">Button</div>
+            </div>
+            <div class="k-column center-content">
+                <div class="k-button primary bordered rounded">Info</div>
+            </div>
+            <div class="k-column center-content">
+                <a type="button" class="k-button warning bordered rounded">Warning</a>
+            </div>
+            <div class="k-column center-content">
+                <button type="button" class="k-button error bordered rounded">Error</button>
+            </div>
+            <div class="k-column center-content">
+                <button type="button" class="k-button success bordered rounded">Success</button>
             </div>
         </div>
     </div>

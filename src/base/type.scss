@@ -1,11 +1,23 @@
+$type-heading-color: $heading-color !default;
+$type-heading-line-height: $heading-line-height !default;
+$type-heading-weight: $weight-semibold !default;
+$type-heading-font-family: $family-sans-serif !default;
+
+$blockquote-background-color: $grey-very-light !default;
+$blockquote-accent-color: $grey-light !default;
+$blockquote-text-color: $grey !default;
+$blockquote-font-family: serif;
+
+$ul-list-style: square outside;
+$ol-list-style: decimal;
+
 .k-type {
 
-
     h1, h2, h3, h4, h5, h6 {
-        color: $heading-color;
-        line-height: $heading-line-height;
-        font-weight: $weight-semibold;
-        font-family: $family-sans-serif;
+        color: $type-heading-color;
+        line-height: $type-heading-line-height;
+        font-weight: $type-heading-weight;
+        font-family: $type-heading-font-family;
     }
     h1 {
         font-size: $text-size-very-large;
@@ -38,14 +50,15 @@
         color: $text-color;
     }
     blockquote {
-        background-color: $grey-very-light;
-        color: $text-color;
+        background-color: $blockquote-background-color;
+        color: $blockquote-text-color;
         padding: 1.5em;
-        border-left: 5px solid $grey-light;
+        border-left: 5px solid $blockquote-accent-color;
         margin: .5em 0em;
+        font-family: $blockquote-font-family;
     }
     ul {
-        list-style: square outside;
+        list-style: $ul-list-style;
         margin: 1em 0em 1em 1.5em;
 
         li {
@@ -53,6 +66,7 @@
         }
     }
     ol {
+        list-style: $ol-list-style;
         margin: 1em 0em 1em 1.5em;
 
         li {

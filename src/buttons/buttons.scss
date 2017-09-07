@@ -137,6 +137,7 @@ $button-border-radius: 5px !default;
 
             &:hover {
                 background-color: $error;
+                color: $white;
             }
         }
     }

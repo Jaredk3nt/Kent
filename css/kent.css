@@ -45,16 +45,18 @@ body {
   color: #4a4a4a; }
 .k-type blockquote {
   background-color: #E8EEF2;
-  color: #4a4a4a;
+  color: #6D6F6F;
   padding: 1.5em;
   border-left: 5px solid #C7D3DD;
-  margin: .5em 0em; }
+  margin: .5em 0em;
+  font-family: serif; }
 .k-type ul {
   list-style: square outside;
   margin: 1em 0em 1em 1.5em; }
   .k-type ul li {
     line-height: 1.5; }
 .k-type ol {
+  list-style: decimal;
   margin: 1em 0em 1em 1.5em; }
   .k-type ol li {
     line-height: 1.5; }
@@ -147,7 +149,8 @@ body {
       border: 2px solid #D02000;
       color: #D02000; }
       .k-button.error.bordered:hover {
-        background-color: #D02000; }
+        background-color: #D02000;
+        color: #fff; }
 
 .k-grid {
   display: flex;
@@ -161,10 +164,11 @@ body {
     flex-wrap: wrap; }
   .k-grid .k-column {
     display: block;
+    position: relative;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
-    margin: 0.5rem;
+    padding: 0.5rem;
     box-sizing: border-box; }
     .k-grid .k-column.full-width {
       flex: none;
@@ -237,19 +241,21 @@ body {
     z-index: 150; }
   .k-nav.accented {
     border-top: #77B6EA solid 4px; }
+  .k-nav.shadow {
+    box-shadow: 1px 4px 8px #E8EEF2; }
   .k-nav .k-logo {
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.5em 0em;
     cursor: pointer;
     font-weight: 700; }
   .k-nav .k-nav-list {
     display: flex;
     align-items: stretch;
     width: 100%; }
-    .k-nav .k-nav-list.k-nav-end {
+    .k-nav .k-nav-list.nav-end {
       justify-content: flex-end; }
-    .k-nav .k-nav-list.k-nav-center {
+    .k-nav .k-nav-list.nav-center {
       justify-content: center;
       align-items: center; }
     .k-nav .k-nav-list .k-nav-item {
@@ -260,11 +266,11 @@ body {
       cursor: pointer; }
       .k-nav .k-nav-list .k-nav-item:hover {
         background-color: #E8EEF2; }
-      .k-nav .k-nav-list .k-nav-item.k-is-dropdown {
+      .k-nav .k-nav-list .k-nav-item.is-dropdown {
         padding: 0em; }
-        .k-nav .k-nav-list .k-nav-item.k-is-dropdown .k-dropdown-title {
+        .k-nav .k-nav-list .k-nav-item.is-dropdown .k-dropdown-title {
           padding: 0.5em 1em; }
-        .k-nav .k-nav-list .k-nav-item.k-is-dropdown:hover > .k-dropdown {
+        .k-nav .k-nav-list .k-nav-item.is-dropdown:hover > .k-dropdown {
           display: block; }
       .k-nav .k-nav-list .k-nav-item .k-dropdown {
         background-color: #fff;
