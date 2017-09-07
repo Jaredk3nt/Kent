@@ -1,6 +1,12 @@
+$nav-background-color: $white !default;
+$nav-hover-color: $grey-very-light !default;
+$nav-accent-color: $primary !default;
+$nav-accent-weight: 4px !default;
+$nav-min-height: 3em !default;
 
 .k-nav {
-    min-height: 3em;
+    background-color: $nav-background-color;
+    min-height: $nav-min-height;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -11,38 +17,80 @@
         display: flex;
         flex-direction: row;
     }
-
     &.sticky {
-        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 150;
+    }
+    &.accented {
+        border-top: $nav-accent-color solid $nav-accent-weight;
     }
 
     .k-logo {
-        width:auto;
-        flex-grow: 0;
-        flex-shrink: 0;
         display: flex;
-        justify-content: center;
         align-items: center;
         padding: 0.5em 1em;
+        cursor: pointer;
+        font-weight: $weight-bold;
     }
 
     .k-nav-list {
         display: flex;
         align-items: stretch;
+        width: 100%;
+
+        &.k-nav-end {
+            justify-content: flex-end;
+        }
+        &.k-nav-center {
+            justify-content: center;
+            align-items: center;
+        }
 
         .k-nav-item {
-            width: auto;
-            position: relative;
+            background-color: $nav-background-color;
             display: flex;
-            flex-grow: 0;
-            flex-shrink: 0;
             padding: 0.5em 1em;
-            justify-content: center;
             align-items: center;
             cursor: pointer;
 
             &:hover {
+                background-color: $nav-hover-color;
+            }
+            &.k-is-dropdown {
+                padding: 0em;
 
+                .k-dropdown-title {
+                    padding: 0.5em 1em;
+                }
+                &:hover > .k-dropdown{
+                    display: block;
+                }
+            }
+
+            .k-dropdown {
+                background-color: $white;
+                padding: 0.5em 0em;;
+                top: 100%;
+                display: none;
+                position: absolute;
+                box-shadow: 1px 4px 8px $grey-light;
+                z-index: 100;
+
+                &.accented {
+                    border-bottom: $nav-accent-color solid $nav-accent-weight;
+                }
+                .k-dropdown-item {
+                    display: flex;
+                    padding: 0.45em 1.5em;
+                    width: auto;
+
+                    &:hover {
+                        background-color: $nav-hover-color;
+                    }
+                }
             }
         }
     }

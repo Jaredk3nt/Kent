@@ -219,6 +219,7 @@ body {
       text-align: center; }
 
 .k-nav {
+  background-color: #fff;
   min-height: 3em;
   position: relative;
   display: flex;
@@ -229,27 +230,57 @@ body {
     display: flex;
     flex-direction: row; }
   .k-nav.sticky {
-    position: absolute; }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 150; }
+  .k-nav.accented {
+    border-top: #77B6EA solid 4px; }
   .k-nav .k-logo {
-    width: auto;
-    flex-grow: 0;
-    flex-shrink: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0.5em 1em; }
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: 700; }
   .k-nav .k-nav-list {
     display: flex;
-    align-items: stretch; }
-    .k-nav .k-nav-list .k-nav-item {
-      width: auto;
-      position: relative;
-      display: flex;
-      flex-grow: 0;
-      flex-shrink: 0;
-      padding: 0.5em 1em;
+    align-items: stretch;
+    width: 100%; }
+    .k-nav .k-nav-list.k-nav-end {
+      justify-content: flex-end; }
+    .k-nav .k-nav-list.k-nav-center {
       justify-content: center;
+      align-items: center; }
+    .k-nav .k-nav-list .k-nav-item {
+      background-color: #fff;
+      display: flex;
+      padding: 0.5em 1em;
       align-items: center;
       cursor: pointer; }
+      .k-nav .k-nav-list .k-nav-item:hover {
+        background-color: #E8EEF2; }
+      .k-nav .k-nav-list .k-nav-item.k-is-dropdown {
+        padding: 0em; }
+        .k-nav .k-nav-list .k-nav-item.k-is-dropdown .k-dropdown-title {
+          padding: 0.5em 1em; }
+        .k-nav .k-nav-list .k-nav-item.k-is-dropdown:hover > .k-dropdown {
+          display: block; }
+      .k-nav .k-nav-list .k-nav-item .k-dropdown {
+        background-color: #fff;
+        padding: 0.5em 0em;
+        top: 100%;
+        display: none;
+        position: absolute;
+        box-shadow: 1px 4px 8px #C7D3DD;
+        z-index: 100; }
+        .k-nav .k-nav-list .k-nav-item .k-dropdown.accented {
+          border-bottom: #77B6EA solid 4px; }
+        .k-nav .k-nav-list .k-nav-item .k-dropdown .k-dropdown-item {
+          display: flex;
+          padding: 0.45em 1.5em;
+          width: auto; }
+          .k-nav .k-nav-list .k-nav-item .k-dropdown .k-dropdown-item:hover {
+            background-color: #E8EEF2; }
 
 /*# sourceMappingURL=kent.css.map */
