@@ -1,0 +1,49 @@
+
+.k-nav {
+    min-height: 3em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+
+    & > .k-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &.sticky {
+        position: absolute;
+    }
+
+    .k-logo {
+        width:auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 1em;
+    }
+
+    .k-nav-list {
+        display: flex;
+        align-items: stretch;
+
+        .k-nav-item {
+            width: auto;
+            position: relative;
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            padding: 0.5em 1em;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+
+            }
+        }
+    }
+}
