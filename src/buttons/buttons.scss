@@ -1,0 +1,143 @@
+$button-background-color: $white !default;
+$button-text-color: $text-color !default;
+$button-hover-background-color: $grey-very-light !default;
+
+$button-border-width: 2px;
+$button-border-color: $grey-light;
+
+$button-padding:0.75em 1em !default;
+$button-border-radius: 5px !default;
+
+.k-button {
+    display: inline-flex;
+    width: fit-content;
+    background-color: $button-background-color;
+    color: $button-text-color;
+    text-align: center;
+    justify-content: center;
+    padding: $button-padding;
+    box-sizing: border-box;
+    white-space: nowrap;
+    cursor: pointer;
+    border: $button-background-color solid $button-border-width;
+    font-size: $text-size-small;
+
+    &:hover {
+        background-color: $button-hover-background-color;
+        border: $button-hover-background-color solid $button-border-width;
+    }
+    &.rounded {
+        border-radius: $button-border-radius;
+    }
+    &.bordered {
+        border: $button-border-width solid $button-border-color;
+    }
+    &.primary {
+        background-color: $primary;
+        color: $white;
+        border: $primary solid $button-border-width;
+
+        &:hover {
+            background-color: darken($primary, 5%);
+            border: darken($primary, 5%) solid $button-border-width;
+        }
+
+        &.bordered {
+            background-color: $white;
+            border: $button-border-width solid $primary;
+            color: $primary;
+
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+
+    &.info {
+        background-color: $info;
+        color: $white;
+        border: $info solid $button-border-width;
+
+        &:hover {
+            background-color: darken($info, 5%);
+            border: darken($info, 5%) solid $button-border-width;
+        }
+
+        &.bordered {
+            background-color: $white;
+            border: $button-border-width solid $info;
+            color: $info;
+
+            &:hover {
+                background-color: $info;
+                color: $white;
+            }
+        }
+    }
+
+    &.success {
+        background-color: $success;
+        color: $white;
+        border: $success solid $button-border-width;
+
+        &:hover {
+            background-color: darken($success, 5%);
+            border: darken($success, 5%) solid $button-border-width;
+        }
+
+        &.bordered {
+            background-color: $white;
+            border: $button-border-width solid $success;
+            color: $success;
+
+            &:hover {
+                background-color: $success;
+                color: $white;
+            }
+        }
+    }
+
+    &.warning {
+        background-color: $warning;
+        color: $white;
+        border: $warning solid $button-border-width;
+
+        &:hover {
+            background-color: darken($warning, 5%);
+            border: darken($warning, 5%) solid $button-border-width;
+        }
+
+        &.bordered {
+            background-color: $white;
+            border: $button-border-width solid $warning;
+            color: $warning;
+
+            &:hover {
+                background-color: $warning;
+                color: $white;
+            }
+        }
+    }
+
+    &.error {
+        background-color: $error;
+        color: $white;
+        border: $error solid $button-border-width;
+
+        &:hover {
+            background-color: darken($error, 5%);
+            border: darken($error, 5%) solid $button-border-width;
+        }
+
+        &.bordered {
+            background-color: $white;
+            border: $button-border-width solid $error;
+            color: $error;
+
+            &:hover {
+                background-color: $error;
+            }
+        }
+    }
+}

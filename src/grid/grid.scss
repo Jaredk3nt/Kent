@@ -1,0 +1,56 @@
+$gap: 0.5rem !default;
+
+.k-grid {
+    display: flex;
+    margin: 0rem (-$gap);
+
+    @media screen and (max-width: $tablet) {
+        display: block;
+    }
+
+    &.centered {
+        justify-content: center;
+    }
+
+    &.wrapped {
+        flex-wrap: wrap;
+    }
+
+    .k-column {
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        margin: $gap;
+        box-sizing: border-box;
+
+        &.full-width {
+            flex: none;
+            width: 100%;
+        }
+        &.one-quarter {
+            flex: none;
+            width: 25%;
+        }
+        &.one-half {
+            flex: none;
+            width: 50%;
+        }
+        &.three-quarters {
+            flex: none;
+            width: 75%;
+        }
+        @for $i from 1 through 12 {
+            &.is-#{$i} {
+                flex: none;
+                width: ($i / 12) * 100%;
+            }
+        }
+        &.center-content {
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+
+}

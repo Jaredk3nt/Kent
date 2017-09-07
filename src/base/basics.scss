@@ -1,0 +1,16 @@
+body {
+    font-family: $family-sans-serif;
+    width: 100%;
+    margin: 0em;
+}
+
+.k-container {
+    margin: 0 auto;
+    width: 70%;
+    box-sizing: border-box;
+    position: relative;
+
+    @media screen and (max-width: $tablet) {
+        width: 95%;
+    }
+}

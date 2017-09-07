@@ -1,0 +1,50 @@
+/* COLORS */
+$white: #fff !default;
+$black: #000 !default;
+
+$grey: #6D6F6F !default;
+$grey-light: #C7D3DD !default;
+$grey-dark: #37393A !default;
+$grey-very-light: #E8EEF2 !default;
+
+$blue: #6c99bb !default;
+$cyan: #9e86c8 !default;
+$green: #b4c973 !default;
+$purple: #b05279 !default;
+$red: #D02000 !default;
+$orange: #e87d3e !default;
+$yellow: #e5b567 !default;
+
+$primary: #77B6EA !default;
+$info: $blue !default;
+$success: $green !default;
+$warning: $yellow !default;
+$error: $red !default;
+
+$background-color: $white;
+$heading-color: $grey-dark;
+$text-color: #4a4a4a;
+$link-color: $primary;
+$link-hover: $grey;
+
+
+/* SIZES */
+$text-size-very-large: 2.5rem !default;
+$text-size-large: 2rem !default;
+$text-size-medium: 1.5rem !default;
+$text-size-normal: 1.25rem !default;
+$text-size-small: 1rem !default;
+$text-size-very-small: 0.75rem !default;
+
+$weight-bold: 700 !default;
+$weight-semibold: 500 !default;
+$weight-normal: 400 !default;
+$weight-light: 300 !default;
+
+$tablet: 769px !default;
+$laptop: 1000px !default;
+$desktop: 1192px !default;
+$large-desktop: 1384px !default;
+
+$heading-line-height: 1.25 !default;
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
