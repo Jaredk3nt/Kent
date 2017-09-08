@@ -1,0 +1,23 @@
+{
+  "name": "kent-css",
+  "version": "0.1.0",
+  "description": "Simple flex-box based css framework",
+  "main": "kent.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaredk3nt/Kent.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "scss",
+    "sass",
+    "kent"
+  ],
+  "author": "Jared K. Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaredk3nt/Kent/issues"
+  },
+  "homepage": "https://github.com/Jaredk3nt/Kent#readme"
+}
