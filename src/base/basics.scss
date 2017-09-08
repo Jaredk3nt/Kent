@@ -1,3 +1,6 @@
+$hero-padding: 4em 0em !default;
+$hero-padding-large: 9em 0em !default;
+
 body {
     font-family: $family-sans-serif;
     width: 100%;
@@ -12,5 +15,46 @@ body {
 
     @media screen and (max-width: $tablet) {
         width: 95%;
+    }
+}
+
+.k-hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+
+    &.large > .k-hero-content{
+        padding: $hero-padding-large;
+    }
+    &.dark {
+        background-color: $grey-dark;
+    }
+    &.light {
+        background-color: $grey-very-light;
+
+        .k-hero-content {
+            .k-title {
+                color: $grey-dark;
+            }
+            .k-subtitle {
+                color: $grey-dark;
+            }
+        }
+    }
+
+    .k-hero-content {
+        padding: $hero-padding;
+
+        .k-title {
+            color: $white;
+            font-weight: $weight-bold;
+            font-size: $text-size-large;
+        }
+        .k-subtitle {
+            color: $white;
+            font-weight: $weight-light;
+            font-size: $text-size-normal;
+        }
     }
 }

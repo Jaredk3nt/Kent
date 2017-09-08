@@ -3,6 +3,7 @@ $nav-hover-color: $grey-very-light !default;
 $nav-accent-color: $primary !default;
 $nav-accent-weight: 4px !default;
 $nav-min-height: 3em !default;
+$nav-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2) !default;
 
 .k-nav {
     background-color: $nav-background-color;
@@ -28,7 +29,7 @@ $nav-min-height: 3em !default;
         border-top: $nav-accent-color solid $nav-accent-weight;
     }
     &.shadow {
-        box-shadow: 1px 4px 8px $grey-very-light;
+        box-shadow: $nav-shadow;
     }
 
     .k-logo {
@@ -79,7 +80,7 @@ $nav-min-height: 3em !default;
                 top: 100%;
                 display: none;
                 position: absolute;
-                box-shadow: 1px 4px 8px $grey-light;
+                box-shadow: $nav-shadow;
                 z-index: 100;
 
                 &.accented {

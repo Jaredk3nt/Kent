@@ -1,8 +1,9 @@
 /* Kent v0.0.1 */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 /* COLORS */
 /* SIZES */
 body {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
   margin: 0em; }
 
@@ -15,11 +16,37 @@ body {
     .k-container {
       width: 95%; } }
 
+.k-hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #77B6EA; }
+  .k-hero.large > .k-hero-content {
+    padding: 9em 0em; }
+  .k-hero.dark {
+    background-color: #37393A; }
+  .k-hero.light {
+    background-color: #E8EEF2; }
+    .k-hero.light .k-hero-content .k-title {
+      color: #37393A; }
+    .k-hero.light .k-hero-content .k-subtitle {
+      color: #37393A; }
+  .k-hero .k-hero-content {
+    padding: 4em 0em; }
+    .k-hero .k-hero-content .k-title {
+      color: #fff;
+      font-weight: 700;
+      font-size: 2rem; }
+    .k-hero .k-hero-content .k-subtitle {
+      color: #fff;
+      font-weight: 300;
+      font-size: 1.25rem; }
+
 .k-type h1, .k-type h2, .k-type h3, .k-type h4, .k-type h5, .k-type h6 {
   color: #37393A;
   line-height: 1.25;
-  font-weight: 500;
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-weight: 600;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 .k-type h1 {
   font-size: 2.5rem;
   margin: 1em 0em .5em 0em; }
@@ -49,7 +76,7 @@ body {
   padding: 1.5em;
   border-left: 5px solid #C7D3DD;
   margin: .5em 0em;
-  font-family: serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 .k-type ul {
   list-style: square outside;
   margin: 1em 0em 1em 1.5em; }
@@ -96,60 +123,60 @@ body {
         background-color: #77B6EA;
         color: #fff; }
   .k-button.info {
-    background-color: #6c99bb;
+    background-color: #016FB9;
     color: #fff;
-    border: #6c99bb solid 2px; }
+    border: #016FB9 solid 2px; }
     .k-button.info:hover {
-      background-color: #5b8db3;
-      border: #5b8db3 solid 2px; }
+      background-color: #0160a0;
+      border: #0160a0 solid 2px; }
     .k-button.info.bordered {
       background-color: #fff;
-      border: 2px solid #6c99bb;
-      color: #6c99bb; }
+      border: 2px solid #016FB9;
+      color: #016FB9; }
       .k-button.info.bordered:hover {
-        background-color: #6c99bb;
+        background-color: #016FB9;
         color: #fff; }
   .k-button.success {
-    background-color: #b4c973;
+    background-color: #2AD94D;
     color: #fff;
-    border: #b4c973 solid 2px; }
+    border: #2AD94D solid 2px; }
     .k-button.success:hover {
-      background-color: #aac261;
-      border: #aac261 solid 2px; }
+      background-color: #23c644;
+      border: #23c644 solid 2px; }
     .k-button.success.bordered {
       background-color: #fff;
-      border: 2px solid #b4c973;
-      color: #b4c973; }
+      border: 2px solid #2AD94D;
+      color: #2AD94D; }
       .k-button.success.bordered:hover {
-        background-color: #b4c973;
+        background-color: #2AD94D;
         color: #fff; }
   .k-button.warning {
-    background-color: #e5b567;
+    background-color: #f7b32b;
     color: #fff;
-    border: #e5b567 solid 2px; }
+    border: #f7b32b solid 2px; }
     .k-button.warning:hover {
-      background-color: #e1aa51;
-      border: #e1aa51 solid 2px; }
+      background-color: #f6aa12;
+      border: #f6aa12 solid 2px; }
     .k-button.warning.bordered {
       background-color: #fff;
-      border: 2px solid #e5b567;
-      color: #e5b567; }
+      border: 2px solid #f7b32b;
+      color: #f7b32b; }
       .k-button.warning.bordered:hover {
-        background-color: #e5b567;
+        background-color: #f7b32b;
         color: #fff; }
   .k-button.error {
-    background-color: #D02000;
+    background-color: #e3170a;
     color: #fff;
-    border: #D02000 solid 2px; }
+    border: #e3170a solid 2px; }
     .k-button.error:hover {
-      background-color: #b71c00;
-      border: #b71c00 solid 2px; }
+      background-color: #cb1509;
+      border: #cb1509 solid 2px; }
     .k-button.error.bordered {
       background-color: #fff;
-      border: 2px solid #D02000;
-      color: #D02000; }
+      border: 2px solid #e3170a;
+      color: #e3170a; }
       .k-button.error.bordered:hover {
-        background-color: #D02000;
+        background-color: #e3170a;
         color: #fff; }
 
 .k-grid {
@@ -242,7 +269,7 @@ body {
   .k-nav.accented {
     border-top: #77B6EA solid 4px; }
   .k-nav.shadow {
-    box-shadow: 1px 4px 8px #E8EEF2; }
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2); }
   .k-nav .k-logo {
     display: flex;
     align-items: center;
@@ -278,7 +305,7 @@ body {
         top: 100%;
         display: none;
         position: absolute;
-        box-shadow: 1px 4px 8px #C7D3DD;
+        box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
         z-index: 100; }
         .k-nav .k-nav-list .k-nav-item .k-dropdown.accented {
           border-bottom: #77B6EA solid 4px; }
@@ -288,5 +315,21 @@ body {
           width: auto; }
           .k-nav .k-nav-list .k-nav-item .k-dropdown .k-dropdown-item:hover {
             background-color: #E8EEF2; }
+
+.k-form .k-field {
+  margin-bottom: 1em; }
+  .k-form .k-field .k-label {
+    display: block;
+    font-size: 1rem;
+    padding: 0em 0em 0.5em 0em; }
+  .k-form .k-field .k-input {
+    width: 100%;
+    padding: 0.5em 0.5em 0.5em 1em;
+    border-radius: 5px;
+    border: #C7D3DD solid 1.3px;
+    font-size: 1rem; }
+    .k-form .k-field .k-input:focus {
+      border: #77B6EA solid 1.3px;
+      outline: none; }
 
 /*# sourceMappingURL=kent.css.map */

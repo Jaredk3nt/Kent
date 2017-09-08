@@ -6,10 +6,10 @@ $type-heading-font-family: $family-sans-serif !default;
 $blockquote-background-color: $grey-very-light !default;
 $blockquote-accent-color: $grey-light !default;
 $blockquote-text-color: $grey !default;
-$blockquote-font-family: serif;
+$blockquote-font-family: $family-sans-serif !default;
 
-$ul-list-style: square outside;
-$ol-list-style: decimal;
+$ul-list-style: square outside !default;
+$ol-list-style: decimal !default;
 
 .k-type {
 

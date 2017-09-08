@@ -7,13 +7,19 @@ $grey-light: #C7D3DD !default;
 $grey-dark: #37393A !default;
 $grey-very-light: #E8EEF2 !default;
 
-$blue: #6c99bb !default;
-$cyan: #9e86c8 !default;
-$green: #b4c973 !default;
+// $blue: #6c99bb !default;
+// $cyan: #9e86c8 !default;
+// $green: #b4c973 !default;
+// $purple: #b05279 !default;
+// $red: #D02000 !default;
+// $orange: #e87d3e !default;
+// $yellow: #e5b567 !default;
+
+$blue: #016FB9 !default;
+$green: #2AD94D !default;
 $purple: #b05279 !default;
-$red: #D02000 !default;
-$orange: #e87d3e !default;
-$yellow: #e5b567 !default;
+$red: #e3170a !default;
+$yellow: #f7b32b !default;
 
 $primary: #77B6EA !default;
 $info: $blue !default;
@@ -37,7 +43,7 @@ $text-size-small: 1rem !default;
 $text-size-very-small: 0.75rem !default;
 
 $weight-bold: 700 !default;
-$weight-semibold: 500 !default;
+$weight-semibold: 600 !default;
 $weight-normal: 400 !default;
 $weight-light: 300 !default;
 
@@ -47,5 +53,5 @@ $desktop: 1192px !default;
 $large-desktop: 1384px !default;
 
 $heading-line-height: 1.25 !default;
-$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif !default;
 $border-radius: 5px;

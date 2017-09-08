@@ -2,8 +2,8 @@ $button-background-color: $white !default;
 $button-text-color: $text-color !default;
 $button-hover-background-color: $grey-very-light !default;
 
-$button-border-width: 2px;
-$button-border-color: $grey-light;
+$button-border-width: 2px !default;
+$button-border-color: $grey-light !default;
 
 $button-padding:0.75em 1em !default;
 $button-border-radius: 5px !default;
