@@ -1,6 +1,6 @@
 {
   "name": "kent-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple flex-box based css framework",
   "main": "kent.scss",
   "repository": {
