@@ -1,12 +1,12 @@
-$nm-background-color: $grey-dark;
-$nm-text-color: $grey-light;
-$nm-blockquote-background-color: #4f5254;
-$nm-blockquote-accent: $grey-light;
+$nm-background-color: $grey-dark !default;
+$nm-text-color: $grey-light !default;
+$nm-blockquote-background-color: #4f5254 !default;
+$nm-blockquote-accent: $grey-light !default;
 
-$nm-primary: #537FA3;
-$nm-dark: #1e1f20;
-$nm-light: #dddede;
-$nm-input-background: #505354;
+$nm-primary: #537FA3 !default;
+$nm-dark: #1e1f20 !default;
+$nm-light: #dddede !default;
+$nm-input-background: #505354 !default;
 
 body {
     &.k-nightmode {
