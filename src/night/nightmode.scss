@@ -8,6 +8,9 @@ $nm-dark: #1e1f20 !default;
 $nm-light: #dddede !default;
 $nm-input-background: #505354 !default;
 
+$nm-nav: #1e1f20 !default;
+$nm-nav-hover: $grey-dark !default;
+
 body {
     &.k-nightmode {
         background-color: $nm-background-color;
@@ -27,18 +30,18 @@ body {
 
         // Nav
         .k-nav {
-            background-color: $nm-background-color;
+            background-color: $nm-nav;
 
             .k-nav-list {
                 .k-nav-item {
-                    background-color: $nm-background-color;
-                    color: $nm-text-color;
+                    background-color: $nm-nav;
+                    color: $nm-light;
 
-                    &.is-dropdown {
-
+                    &:hover {
+                        background-color: $nm-nav-hover;
                     }
                     .k-dropdown {
-                        background-color: $nm-background-color;
+                        background-color: $nm-nav;
                     }
                 }
             }
