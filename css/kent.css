@@ -251,7 +251,7 @@ body {
 
 .k-nav {
   background-color: #fff;
-  min-height: 3em;
+  min-height: 3.5em;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -270,6 +270,15 @@ body {
     border-top: #77B6EA solid 4px; }
   .k-nav.shadow {
     box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2); }
+  .k-nav.dark {
+    background-color: #1e1f20; }
+    .k-nav.dark .k-nav-list .k-nav-item {
+      background-color: #1e1f20;
+      color: #fff; }
+      .k-nav.dark .k-nav-list .k-nav-item:hover {
+        background-color: #37393A; }
+      .k-nav.dark .k-nav-list .k-nav-item .k-dropdown {
+        background-color: #1e1f20; }
   .k-nav .k-logo {
     display: flex;
     align-items: center;

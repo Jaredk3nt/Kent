@@ -2,8 +2,11 @@ $nav-background-color: $white !default;
 $nav-hover-color: $grey-very-light !default;
 $nav-accent-color: $primary !default;
 $nav-accent-weight: 4px !default;
-$nav-min-height: 3em !default;
+$nav-min-height: 3.5em !default;
 $nav-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2) !default;
+
+$nav-dark: #1e1f20 !default;
+$nav-dark-hover: $grey-dark !default;
 
 .k-nav {
     background-color: $nav-background-color;
@@ -30,6 +33,23 @@ $nav-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2) !default;
     }
     &.shadow {
         box-shadow: $nav-shadow;
+    }
+    &.dark {
+        background-color: $nav-dark;
+
+        .k-nav-list {
+            .k-nav-item {
+                background-color: $nav-dark;
+                color: $white;
+
+                &:hover {
+                    background-color: $nav-dark-hover;
+                }
+                .k-dropdown {
+                    background-color: $nav-dark;
+                }
+            }
+        }
     }
 
     .k-logo {
