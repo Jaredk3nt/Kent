@@ -7,14 +7,6 @@ $grey-light: #C7D3DD !default;
 $grey-dark: #37393A !default;
 $grey-very-light: #E8EEF2 !default;
 
-// $blue: #6c99bb !default;
-// $cyan: #9e86c8 !default;
-// $green: #b4c973 !default;
-// $purple: #b05279 !default;
-// $red: #D02000 !default;
-// $orange: #e87d3e !default;
-// $yellow: #e5b567 !default;
-
 $blue: #016FB9 !default;
 $green: #2AD94D !default;
 $purple: #b05279 !default;
@@ -27,11 +19,11 @@ $success: $green !default;
 $warning: $yellow !default;
 $error: $red !default;
 
-$background-color: $white;
-$heading-color: $grey-dark;
-$text-color: #4a4a4a;
-$link-color: $primary;
-$link-hover: $grey;
+$background-color: $white !default;
+$heading-color: $grey-dark !default;
+$text-color: #4a4a4a !default;
+$link-color: $primary !default;
+$link-hover: $grey !default;
 
 
 /* SIZES */

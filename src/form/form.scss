@@ -4,27 +4,74 @@ $input-border-color-active: $primary !default;
 $input-padding: .5em .5em .5em 1em !default;
 $input-border-weight: 1.3px !default;
 $input-font-size: $text-size-small !default;
+$input-line-height: 1.2 !default;
+
+$select-width: 8em !default;
+$select-padding: .5em 2em .5em .5em !default;
 
 .k-form {
     .k-field {
         margin-bottom: 1em;
+        width: auto;
         .k-label {
             display: block;
             font-size: $input-font-size;
             padding: 0em 0em 0.5em 0em;
-
-
         }
         .k-input {
             width: 100%;
+            display: inline-block;
             padding: $input-padding;
             border-radius: $input-border-radius;
             border: $input-border-color solid $input-border-weight;
             font-size: $input-font-size;
+            line-height: $input-line-height;
 
             &:focus {
                 border: $input-border-color-active solid $input-border-weight;
                 outline: none;
+            }
+        }
+        .k-select {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            box-sizing: border-box;
+            margin-bottom: 1em;
+
+            select {
+                height: 100%;
+                display: block;
+                background-color: $white;
+                max-width: $select-width;
+                min-width: $select-width;
+                padding: $select-padding;
+                border: $input-border-color solid $input-border-weight;
+                font-size: $input-font-size;
+                line-height: $input-line-height;
+                outline: none;
+                box-shadow: none;
+                -webkit-appearance: none;
+            }
+            &::after {
+                border: 1px solid $input-border-color;
+                border-right: 0;
+                border-top: 0;
+                content: " ";
+                display: block;
+                height: 0.5em;
+                position: relative;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                width: 0.5em;
+                margin-top: -1.58em;
+                right: -6.6em;
+                top: 50%;
+            }
+            &:hover {
+                &::after {
+                    border-color: $primary;
+                }
             }
         }
     }

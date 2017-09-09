@@ -317,19 +317,57 @@ body {
             background-color: #E8EEF2; }
 
 .k-form .k-field {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  width: auto; }
   .k-form .k-field .k-label {
     display: block;
     font-size: 1rem;
     padding: 0em 0em 0.5em 0em; }
   .k-form .k-field .k-input {
     width: 100%;
+    display: inline-block;
     padding: 0.5em 0.5em 0.5em 1em;
     border-radius: 5px;
     border: #C7D3DD solid 1.3px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 1.2; }
     .k-form .k-field .k-input:focus {
       border: #77B6EA solid 1.3px;
       outline: none; }
+  .k-form .k-field .k-select {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-bottom: 1em; }
+    .k-form .k-field .k-select select {
+      height: 100%;
+      display: block;
+      background-color: #fff;
+      max-width: 8em;
+      min-width: 8em;
+      padding: 0.5em 2em 0.5em 0.5em;
+      border: #C7D3DD solid 1.3px;
+      font-size: 1rem;
+      line-height: 1.2;
+      outline: none;
+      box-shadow: none;
+      -webkit-appearance: none; }
+    .k-form .k-field .k-select::after {
+      border: 1px solid #C7D3DD;
+      border-right: 0;
+      border-top: 0;
+      content: " ";
+      display: block;
+      height: 0.5em;
+      position: relative;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      width: 0.5em;
+      margin-top: -1.58em;
+      right: -6.6em;
+      top: 50%; }
+    .k-form .k-field .k-select:hover::after {
+      border-color: #77B6EA; }
 
 /*# sourceMappingURL=kent.css.map */
