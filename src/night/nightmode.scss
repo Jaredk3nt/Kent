@@ -9,7 +9,7 @@ $nm-light: #dddede;
 $nm-input-background: #505354;
 
 body {
-    &.nightmode {
+    &.k-nightmode {
         background-color: $nm-background-color;
         color: $nm-text-color;
 
