@@ -5,6 +5,7 @@ $input-padding: .5em .5em .5em 1em !default;
 $input-border-weight: 1.3px !default;
 $input-font-size: $text-size-small !default;
 $input-line-height: 1.2 !default;
+$input-active-glow: 0px 0px 4px $primary !default;
 
 $select-width: 8em !default;
 $select-padding: .5em 2em .5em .5em !default;
@@ -30,6 +31,7 @@ $select-padding: .5em 2em .5em .5em !default;
             &:focus {
                 border: $input-border-color-active solid $input-border-weight;
                 outline: none;
+                box-shadow: $input-active-glow;
             }
         }
         .k-select {
@@ -38,6 +40,7 @@ $select-padding: .5em 2em .5em .5em !default;
             vertical-align: top;
             box-sizing: border-box;
             margin-bottom: 1em;
+
 
             select {
                 height: 100%;
@@ -52,6 +55,7 @@ $select-padding: .5em 2em .5em .5em !default;
                 outline: none;
                 box-shadow: none;
                 -webkit-appearance: none;
+                cursor: pointer;
             }
             &::after {
                 border: 1px solid $input-border-color;

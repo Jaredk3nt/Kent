@@ -1,0 +1,133 @@
+$nm-background-color: $grey-dark;
+$nm-text-color: $grey-light;
+$nm-blockquote-background-color: #4f5254;
+$nm-blockquote-accent: $grey-light;
+
+$nm-primary: #537FA3;
+$nm-dark: #1e1f20;
+$nm-light: #dddede;
+$nm-input-background: #505354;
+
+body {
+    &.nightmode {
+        background-color: $nm-background-color;
+        color: $nm-text-color;
+
+        // Hero
+        .k-hero {
+            background-color: $nm-primary;
+
+            &.dark {
+                background-color: $nm-dark;
+            }
+            &.light {
+                background-color: $nm-light;
+            }
+        }
+
+        // Nav
+        .k-nav {
+            background-color: $nm-background-color;
+
+            .k-nav-list {
+                .k-nav-item {
+                    background-color: $nm-background-color;
+                    color: $nm-text-color;
+
+                    &.is-dropdown {
+
+                    }
+                    .k-dropdown {
+                        background-color: $nm-background-color;
+                    }
+                }
+            }
+        }
+
+        // Type
+        .k-type {
+            h1, h2, h3, h4, h5, h6 {
+                color: $white;
+            }
+            p {
+                color: $nm-text-color;
+            }
+            blockquote {
+                background-color: $nm-blockquote-background-color;
+                color: $nm-light;
+                border-color: $nm-dark;
+            }
+        }
+
+        // Buttons
+        .k-button {
+            background-color: $nm-background-color;
+            &:hover {
+                color:$nm-text-color;
+            }
+
+            &.info {
+                background-color: $info;
+                &:hover {
+                    color:$white;
+                }
+            }
+            &.warning {
+                background-color: $warning;
+                &:hover {
+                    color:$white;
+                }
+            }
+            &.success {
+                background-color: $success;
+                &:hover {
+                    color:$white;
+                }
+            }
+            &.error {
+                background-color: $error;
+                &:hover {
+                    color:$white;
+                }
+            }
+            &.bordered {
+                background-color: $nm-background-color;
+                &:hover {
+                    color:$white;
+                }
+            }
+        }
+
+        // Form
+        .k-form {
+            .k-field {
+                .k-input {
+                    background-color: $nm-input-background;
+                    border-color: $nm-dark;
+
+                    &:focus {
+                        background-color: $nm-light;
+                    }
+
+                    &:active {
+                        background-color: $nm-light;
+                    }
+                }
+                .k-select {
+                    select {
+                        background-color: $nm-input-background;
+                        border-color: $nm-dark;
+                    }
+                    &::after {
+                        border-color: $nm-dark;
+                    }
+                    &:hover {
+                        &::after {
+                            border-color: $nm-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
