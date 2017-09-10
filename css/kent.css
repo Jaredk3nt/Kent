@@ -381,6 +381,9 @@ body {
     .k-form .k-field .k-select:hover::after {
       border-color: #77B6EA; }
 
+.k-table th, .k-table td {
+  padding: 0.5em 0.8em; }
+
 body.k-nightmode {
   background-color: #37393A;
   color: #C7D3DD; }

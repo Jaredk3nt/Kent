@@ -1,0 +1,12 @@
+$table-background-color: $white !default;
+$table-text-color: $text-color !default;
+$table-cell-padding: 0.5em 0.8em !default;
+
+.k-table {
+    th, td {
+        padding: $table-cell-padding;
+    }
+    td {
+
+    }
+}

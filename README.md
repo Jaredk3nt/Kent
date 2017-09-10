@@ -4,55 +4,14 @@
 # Kent css
 The only css framework on the internet created by me (Jared). Kent is a simple, minimal, and custom css framework built using scss and relying on flexbox!
 
+Kent has a 'beta' global night-mode for all components.
+
 > Kentcss uses a k- prefix on all components
 
+Install with `npm install kent-css`!
+
 ## Docs
-### Variables
-The base modifiable SCSS variables for the styles. All variables can be overwritten by defining them before importing Kent.
-``` scss
-// color variables
-$white
-$black
-$grey
-$grey-light
-$grey-dark
-$grey-very-light
-$blue
-$green
-$purple
-$red
-$yellow
-$primary
-$info
-$success
-$warning
-$error
-$background-color
-$heading-color
-$text-color
-$link-color
-$link-hover
-```
-``` scss
-// size variables
-$text-size-very-large
-$text-size-large
-$text-size-medium
-$text-size-normal
-$text-size-small
-$text-size-very-small
-$weight-bold
-$weight-semibold
-$weight-normal
-$weight-light
-$tablet
-$laptop
-$desktop
-$large-desktop
-$heading-line-height
-$family-sans-serif
-$border-radius
-```
+
 #### Basics
 .k-container
 - provides a width constrained container for center-content
@@ -132,4 +91,51 @@ $border-radius
 <body class="k-nightmode">
     <!-- Application -->
 </body>
+```
+
+### Variables
+The base modifiable SCSS variables for the styles. All variables can be overwritten by defining them before importing Kent.
+``` scss
+// color variables
+$white
+$black
+$grey
+$grey-light
+$grey-dark
+$grey-very-light
+$blue
+$green
+$purple
+$red
+$yellow
+$primary
+$info
+$success
+$warning
+$error
+$background-color
+$heading-color
+$text-color
+$link-color
+$link-hover
+```
+``` scss
+// size variables
+$text-size-very-large
+$text-size-large
+$text-size-medium
+$text-size-normal
+$text-size-small
+$text-size-very-small
+$weight-bold
+$weight-semibold
+$weight-normal
+$weight-light
+$tablet
+$laptop
+$desktop
+$large-desktop
+$heading-line-height
+$family-sans-serif
+$border-radius
 ```
