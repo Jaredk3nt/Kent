@@ -84,6 +84,30 @@ Install with `npm install kent-css`!
 </div>
 ```
 
+#### Table
+.k-table
+- striped, solid header, and selected modifiers
+``` html
+<table class="k-table striped">
+    <thead class="solid">
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="selected">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>    
+    </tbody>
+</table>
+```
+
 ### Nightmode (Beta feature)
 .k-nightmode
 - Global night-mode styling on all current components

@@ -381,8 +381,24 @@ body {
     .k-form .k-field .k-select:hover::after {
       border-color: #77B6EA; }
 
-.k-table th, .k-table td {
-  padding: 0.5em 0.8em; }
+.k-table {
+  border-collapse: collapse; }
+  .k-table.striped tbody tr:nth-child(odd) {
+    background: #f1f4f7; }
+  .k-table.striped tbody tr th, .k-table.striped tbody tr td {
+    border: none; }
+  .k-table thead.solid {
+    background-color: #77B6EA; }
+  .k-table thead tr th {
+    border-bottom: 2px solid #77B6EA; }
+  .k-table th, .k-table td {
+    padding: 0.6em 1em;
+    border-bottom: 1px solid #C7D3DD; }
+  .k-table tr:hover {
+    background-color: #f8fafb; }
+  .k-table tr.selected {
+    background-color: #77B6EA;
+    color: #fff; }
 
 body.k-nightmode {
   background-color: #37393A;

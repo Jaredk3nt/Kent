@@ -1,12 +1,51 @@
 $table-background-color: $white !default;
 $table-text-color: $text-color !default;
-$table-cell-padding: 0.5em 0.8em !default;
+$table-cell-padding: 0.6em 1em !default;
+
+$cell-border-bottom: 1px solid $grey-light !default;
+$head-border-bottom: 2px solid $primary !default;
+$hover-background-color: #f8fafb !default;
+
+$selected-background-color: $primary !default;
+$striped-background-color: #f1f4f7 !default;
 
 .k-table {
+    border-collapse: collapse;
+
+    &.striped {
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background: $striped-background-color;
+                }
+                th, td {
+                    border: none;
+                }
+            }
+        }
+    }
+    thead {
+        &.solid {
+            background-color: $primary;
+        }
+        tr {
+
+            th {
+                border-bottom: $head-border-bottom;
+            }
+        }
+    }
     th, td {
         padding: $table-cell-padding;
+        border-bottom: $cell-border-bottom;
     }
-    td {
-
+    tr {
+        &:hover {
+            background-color: $hover-background-color;
+        }
+        &.selected {
+            background-color: $selected-background-color;
+            color: $white;
+        }
     }
 }
