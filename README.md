@@ -5,12 +5,14 @@
 The only css framework on the internet created by me (Jared). Kent is a simple, minimal, and custom css framework built using scss and relying on flexbox!
 
 ## Getting started with Kent
-Install with `npm install kent-css` or fork on [Github](https://github.com/Jaredk3nt/Kent)
+Install with `npm install kent-css` or fork the project on [Github](https://github.com/Jaredk3nt/Kent).
 
-Check out the [documentation](https://github.com/Jaredk3nt/Kent/wiki/Documentation)
+Kent comes with a pre-compiled CSS file `/css/kent.css` so you don't have to do that work!
 
-##License
-All parts of Skeleton are free to use and abuse under the open-source [MIT license](https://github.com/Jaredk3nt/Kent/blob/master/LICENSE).
+Check out the [documentation](https://github.com/Jaredk3nt/Kent/wiki/Documentation) for more information on using Kent.
+
+## License
+Kent is licensed under the open source [MIT license](https://github.com/Jaredk3nt/Kent/blob/master/LICENSE).
 
 ### Acknowledgements
 Created by [Jared Jones](jaredjones.me)
