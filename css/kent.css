@@ -42,52 +42,6 @@ body {
       font-weight: 300;
       font-size: 1.25rem; }
 
-.k-type h1, .k-type h2, .k-type h3, .k-type h4, .k-type h5, .k-type h6 {
-  color: #37393A;
-  line-height: 1.25;
-  font-weight: 600;
-  font-family: "Raleway", Helvetica, Arial, sans-serif; }
-.k-type h1 {
-  font-size: 2.5rem;
-  margin: 1em 0em .5em 0em; }
-.k-type h2 {
-  font-size: 2rem;
-  margin: 1em 0em .4em 0em; }
-.k-type h3 {
-  font-size: 1.5rem;
-  margin: .85em 0em .35em 0em; }
-.k-type h4 {
-  font-size: 1.5rem;
-  margin: .75em 0em .3em 0em; }
-.k-type h5 {
-  font-size: 1.25rem;
-  margin: .5em 0em .25em 0em; }
-.k-type h6 {
-  font-size: 1.25rem;
-  margin: .5em 0em .25em 0em;
-  color: #6D6F6F; }
-.k-type p {
-  margin: 0em 0em 1em 0em;
-  line-height: 1.5;
-  color: #4a4a4a; }
-.k-type blockquote {
-  background-color: #E8EEF2;
-  color: #6D6F6F;
-  padding: 1.5em;
-  border-left: 5px solid #C7D3DD;
-  margin: .5em 0em;
-  font-family: "Raleway", Helvetica, Arial, sans-serif; }
-.k-type ul {
-  list-style: square outside;
-  margin: 1em 0em 1em 1.5em; }
-  .k-type ul li {
-    line-height: 1.5; }
-.k-type ol {
-  list-style: decimal;
-  margin: 1em 0em 1em 1.5em; }
-  .k-type ol li {
-    line-height: 1.5; }
-
 .k-button {
   display: inline-flex;
   width: fit-content;
@@ -178,6 +132,52 @@ body {
       .k-button.error.bordered:hover {
         background-color: #e3170a;
         color: #fff; }
+
+.k-type h1, .k-type h2, .k-type h3, .k-type h4, .k-type h5, .k-type h6 {
+  color: #37393A;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: "Raleway", Helvetica, Arial, sans-serif; }
+.k-type h1 {
+  font-size: 2.5rem;
+  margin: 1em 0em .5em 0em; }
+.k-type h2 {
+  font-size: 2rem;
+  margin: 1em 0em .4em 0em; }
+.k-type h3 {
+  font-size: 1.5rem;
+  margin: .85em 0em .35em 0em; }
+.k-type h4 {
+  font-size: 1.5rem;
+  margin: .75em 0em .3em 0em; }
+.k-type h5 {
+  font-size: 1.25rem;
+  margin: .5em 0em .25em 0em; }
+.k-type h6 {
+  font-size: 1.25rem;
+  margin: .5em 0em .25em 0em;
+  color: #6D6F6F; }
+.k-type p {
+  margin: 0em 0em 1em 0em;
+  line-height: 1.5;
+  color: #4a4a4a; }
+.k-type blockquote {
+  background-color: #E8EEF2;
+  color: #6D6F6F;
+  padding: 1.5em;
+  border-left: 5px solid #C7D3DD;
+  margin: .5em 0em;
+  font-family: "Raleway", Helvetica, Arial, sans-serif; }
+.k-type ul {
+  list-style: square outside;
+  margin: 1em 0em 1em 1.5em; }
+  .k-type ul li {
+    line-height: 1.5; }
+.k-type ol {
+  list-style: decimal;
+  margin: 1em 0em 1em 1.5em; }
+  .k-type ol li {
+    line-height: 1.5; }
 
 .k-grid {
   display: flex;
