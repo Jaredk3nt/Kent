@@ -72,7 +72,6 @@
     <div class="k-container" style="margin-bottom: 5em;">
         <div class="k-type">
             <h1>Welcome to Kent CSS</h1>
-            <p>The only CSS framework on the internet made by me, Jared.</p>
             <h2>We have headings (this ones an h2)</h2>
             <p>Its all pretty straight forward. We can write all sorts of styled text inside of a .k-type element. This makes our paragraphs and headers look all professional like. We are also inside of a k-container which constricts our content to 70% of the page, but it stays centered so your page can look modern as heck.</p>
             <blockquote>
@@ -216,37 +215,35 @@
             <h2>k-form</h2>
         </div>
         <div class="k-form">
-            <div class="k-field">
-                <label class="k-label">Input field</label>
-                <input type="text" class="k-input" placeholder="Check out these nifty inputs">
-            </div>
-            <div class="k-field">
-                <label class="k-label">Input field</label>
-                <input type="text" class="k-input" placeholder="Check out these nifty inputs">
-            </div>
-            <div class="k-field">
-                <label class="k-label">Dropdown</label>
-                <div class="k-select">
-                    <select name="">
-                        <option value="">Option 1</option>
-                        <option value="">Option 2</option>
-                    </select>
+            <div class="k-grid">
+                <div class="k-column is-8">
+                    <div class="k-field ">
+                        <label class="k-label">Input field</label>
+                        <input type="text" class="k-input" placeholder="Check out these nifty inputs">
+                    </div>
+                </div>
+                <div class=" k-column is-4">
+                    <div class="k-field">
+                        <label class="k-label">Dropdown</label>
+                        <div class="k-select">
+                            <select name="">
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="k-field">
-                <label class="k-label">Dropdown</label>
-                <div class="k-select">
-                    <select name="">
-                        <option value="">Option 1</option>
-                        <option value="">Option Number 2</option>
-                    </select>
-                </div>
+                <label class="k-label">Textarea</label>
+                <textarea class="k-textarea" placeholder="Write a whole bunch of cool text"></textarea>
             </div>
+             <input class="k-button primary" type="submit" value="Submit">
         </div>
         <div class="k-type">
             <h2>k-table</h2>
         </div>
-        <table class="k-table striped">
+        <table class="k-table striped full-width">
             <thead>
                 <tr>
                     <th>Num.</th>

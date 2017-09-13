@@ -12,6 +12,9 @@ $striped-background-color: #f1f4f7 !default;
 .k-table {
     border-collapse: collapse;
 
+    &.full-width {
+        width: 100%;
+    }
     &.striped {
         tbody {
             tr {
@@ -29,7 +32,6 @@ $striped-background-color: #f1f4f7 !default;
             background-color: $primary;
         }
         tr {
-
             th {
                 border-bottom: $head-border-bottom;
             }
@@ -38,6 +40,7 @@ $striped-background-color: #f1f4f7 !default;
     th, td {
         padding: $table-cell-padding;
         border-bottom: $cell-border-bottom;
+        text-align: left;
     }
     tr {
         &:hover {

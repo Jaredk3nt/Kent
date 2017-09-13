@@ -1,9 +1,9 @@
 /* Kent v0.0.1 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
 /* COLORS */
 /* SIZES */
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   width: 100%;
   margin: 0em; }
 
@@ -14,7 +14,7 @@ body {
   position: relative; }
   @media screen and (max-width: 769px) {
     .k-container {
-      width: 95%; } }
+      width: 90%; } }
 
 .k-hero {
   width: 100%;
@@ -46,7 +46,7 @@ body {
   color: #37393A;
   line-height: 1.25;
   font-weight: 600;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Raleway", Helvetica, Arial, sans-serif; }
 .k-type h1 {
   font-size: 2.5rem;
   margin: 1em 0em .5em 0em; }
@@ -76,7 +76,7 @@ body {
   padding: 1.5em;
   border-left: 5px solid #C7D3DD;
   margin: .5em 0em;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Raleway", Helvetica, Arial, sans-serif; }
 .k-type ul {
   list-style: square outside;
   margin: 1em 0em 1em 1.5em; }
@@ -95,7 +95,7 @@ body {
   color: #4a4a4a;
   text-align: center;
   justify-content: center;
-  padding: 0.75em 1em;
+  padding: 0.6em 1.1em;
   box-sizing: border-box;
   white-space: nowrap;
   cursor: pointer;
@@ -197,6 +197,9 @@ body {
     flex-basis: 0;
     padding: 0.5rem;
     box-sizing: border-box; }
+    @media screen and (max-width: 769px) {
+      .k-grid .k-column {
+        width: 100% !important; } }
     .k-grid .k-column.full-width {
       flex: none;
       width: 100%; }
@@ -332,57 +335,60 @@ body {
     display: block;
     font-size: 1rem;
     padding: 0em 0em 0.5em 0em; }
-  .k-form .k-field .k-input {
+  .k-form .k-field .k-input, .k-form .k-field .k-textarea {
     width: 100%;
     display: inline-block;
-    padding: 0.5em 0.5em 0.5em 1em;
-    border-radius: 5px;
-    border: #C7D3DD solid 1.3px;
+    padding: 0.5em 0.5em 0.5em 0.6em;
+    background-color: #E8EEF2;
+    border: #E8EEF2 solid 2px;
     font-size: 1rem;
-    line-height: 1.2; }
-    .k-form .k-field .k-input:focus {
-      border: #77B6EA solid 1.3px;
+    line-height: 1.2;
+    box-sizing: border-box; }
+    .k-form .k-field .k-input::placeholder, .k-form .k-field .k-textarea::placeholder {
+      color: #6D6F6F; }
+    .k-form .k-field .k-input:focus, .k-form .k-field .k-textarea:focus {
       outline: none;
-      box-shadow: 0px 0px 4px #77B6EA; }
+      background-color: #fff; }
   .k-form .k-field .k-select {
     display: inline-block;
     position: relative;
     vertical-align: top;
     box-sizing: border-box;
-    margin-bottom: 1em; }
+    width: 100%; }
     .k-form .k-field .k-select select {
-      height: 100%;
       display: block;
-      background-color: #fff;
-      max-width: 8em;
-      min-width: 8em;
+      background-color: #E8EEF2;
+      width: 100%;
       padding: 0.5em 2em 0.5em 0.5em;
-      border: #C7D3DD solid 1.3px;
+      border: #E8EEF2 solid 2px;
       font-size: 1rem;
       line-height: 1.2;
       outline: none;
       box-shadow: none;
       -webkit-appearance: none;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 0px;
+      position: relative; }
     .k-form .k-field .k-select::after {
-      border: 1px solid #C7D3DD;
+      content: " ";
+      position: absolute;
+      border: 1px solid #4a4a4a;
       border-right: 0;
       border-top: 0;
-      content: " ";
       display: block;
       height: 0.5em;
-      position: relative;
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
       width: 0.5em;
-      margin-top: -1.58em;
-      right: -6.6em;
-      top: 50%; }
+      right: 10px;
+      top: 13px; }
     .k-form .k-field .k-select:hover::after {
       border-color: #77B6EA; }
 
 .k-table {
   border-collapse: collapse; }
+  .k-table.full-width {
+    width: 100%; }
   .k-table.striped tbody tr:nth-child(odd) {
     background: #f1f4f7; }
   .k-table.striped tbody tr th, .k-table.striped tbody tr td {
@@ -393,7 +399,8 @@ body {
     border-bottom: 2px solid #77B6EA; }
   .k-table th, .k-table td {
     padding: 0.6em 1em;
-    border-bottom: 1px solid #C7D3DD; }
+    border-bottom: 1px solid #C7D3DD;
+    text-align: left; }
   .k-table tr:hover {
     background-color: #f8fafb; }
   .k-table tr.selected {
@@ -450,12 +457,12 @@ body.k-nightmode {
       background-color: #37393A; }
       body.k-nightmode .k-button.bordered:hover {
         color: #fff; }
-  body.k-nightmode .k-form .k-field .k-input {
+  body.k-nightmode .k-form .k-field .k-input, body.k-nightmode .k-form .k-field .k-textarea {
     background-color: #505354;
     border-color: #1e1f20; }
-    body.k-nightmode .k-form .k-field .k-input:focus {
+    body.k-nightmode .k-form .k-field .k-input:focus, body.k-nightmode .k-form .k-field .k-textarea:focus {
       background-color: #dddede; }
-    body.k-nightmode .k-form .k-field .k-input:active {
+    body.k-nightmode .k-form .k-field .k-input:active, body.k-nightmode .k-form .k-field .k-textarea:active {
       background-color: #dddede; }
   body.k-nightmode .k-form .k-field .k-select select {
     background-color: #505354;

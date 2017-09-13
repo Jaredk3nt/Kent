@@ -25,6 +25,10 @@ $gap: 0.5rem !default;
         padding: $gap;
         box-sizing: border-box;
 
+        @media screen and (max-width: $tablet) {
+            width: 100% !important;
+        }
+
         &.full-width {
             flex: none;
             width: 100%;

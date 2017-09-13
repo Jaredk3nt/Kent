@@ -1,8 +1,10 @@
+$input-background-color: $grey-very-light !default;
 $input-border-radius: $border-radius !default;
-$input-border-color: $grey-light !default;
+$input-border-color: $grey-very-light !default;
 $input-border-color-active: $primary !default;
-$input-padding: .5em .5em .5em 1em !default;
-$input-border-weight: 1.3px !default;
+$input-background-color-active: $white !default;
+$input-padding: .5em .5em .5em .6em !default;
+$input-border-weight: 2px !default;
 $input-font-size: $text-size-small !default;
 $input-line-height: 1.2 !default;
 $input-active-glow: 0px 0px 4px $primary !default;
@@ -14,6 +16,7 @@ $select-padding: .5em 2em .5em .5em !default;
     .k-field {
         margin-bottom: 1em;
         width: auto;
+
         .k-label {
             display: block;
             font-size: $input-font-size;
@@ -23,15 +26,17 @@ $select-padding: .5em 2em .5em .5em !default;
             width: 100%;
             display: inline-block;
             padding: $input-padding;
-            border-radius: $input-border-radius;
+            background-color: $input-background-color;
             border: $input-border-color solid $input-border-weight;
             font-size: $input-font-size;
             line-height: $input-line-height;
-
+            box-sizing: border-box;
+            &::placeholder {
+                color: $grey;
+            }
             &:focus {
-                border: $input-border-color-active solid $input-border-weight;
                 outline: none;
-                box-shadow: $input-active-glow;
+                background-color: $input-background-color-active;
             }
         }
         .k-select {
@@ -39,15 +44,12 @@ $select-padding: .5em 2em .5em .5em !default;
             position: relative;
             vertical-align: top;
             box-sizing: border-box;
-            margin-bottom: 1em;
-
+            width: 100%;
 
             select {
-                height: 100%;
                 display: block;
-                background-color: $white;
-                max-width: $select-width;
-                min-width: $select-width;
+                background-color: $input-background-color;
+                width: 100%;
                 padding: $select-padding;
                 border: $input-border-color solid $input-border-weight;
                 font-size: $input-font-size;
@@ -56,27 +58,31 @@ $select-padding: .5em 2em .5em .5em !default;
                 box-shadow: none;
                 -webkit-appearance: none;
                 cursor: pointer;
+                border-radius: 0px;
+                position: relative;
             }
             &::after {
-                border: 1px solid $input-border-color;
+                content: " ";
+                position: absolute;
+                border: 1px solid $text-color;
                 border-right: 0;
                 border-top: 0;
-                content: " ";
                 display: block;
                 height: 0.5em;
-                position: relative;
                 -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
                 width: 0.5em;
-                margin-top: -1.58em;
-                right: -6.6em;
-                top: 50%;
+                right: 10px;
+                top: 13px;
             }
             &:hover {
                 &::after {
                     border-color: $primary;
                 }
             }
+        }
+        .k-textarea {
+            @extend .k-input;
         }
     }
 }
