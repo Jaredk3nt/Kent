@@ -11,9 +11,13 @@ $gap: 0.5rem !default;
     &.centered {
         justify-content: center;
     }
-
     &.wrapped {
         flex-wrap: wrap;
+    }
+    &.borderless {
+        .k-column {
+            padding: 0px;
+        }
     }
 
     .k-column {
