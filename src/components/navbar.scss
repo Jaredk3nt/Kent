@@ -10,6 +10,10 @@ $nav-dark-hover: $grey-dark !default;
 
 $nav-vert-width: 8em;
 
+.vertical-body {
+    margin-left: $nav-vert-width;
+}
+
 .k-nav {
     background-color: $nav-background-color;
     min-height: $nav-min-height;
@@ -69,6 +73,7 @@ $nav-vert-width: 8em;
 
         .k-logo {
             padding: .75em .5em;
+            align-items:stretch;
         }
         .k-nav-list {
             flex-direction: column;

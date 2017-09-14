@@ -254,6 +254,9 @@ body {
       justify-content: center;
       text-align: center; }
 
+.vertical-body {
+  margin-left: 8em; }
+
 .k-nav {
   background-color: #fff;
   min-height: 3.5em;
@@ -298,7 +301,8 @@ body {
     justify-content: center;
     box-sizing: border-box; }
     .k-nav.vertical .k-logo {
-      padding: .75em .5em; }
+      padding: .75em .5em;
+      align-items: stretch; }
     .k-nav.vertical .k-nav-list {
       flex-direction: column; }
       .k-nav.vertical .k-nav-list .k-nav-item {
