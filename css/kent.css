@@ -284,6 +284,49 @@ body {
         background-color: #37393A; }
       .k-nav.dark .k-nav-list .k-nav-item .k-dropdown {
         background-color: #1e1f20; }
+  .k-nav.vertical {
+    height: 100vh;
+    max-width: 8em;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; }
+    .k-nav.vertical .k-logo {
+      padding: .75em .5em; }
+    .k-nav.vertical .k-nav-list {
+      flex-direction: column; }
+      .k-nav.vertical .k-nav-list .k-nav-item {
+        padding: .75em .5em;
+        text-align: center; }
+        .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown {
+          padding: .75em 1em .75em .5em;
+          position: relative; }
+          .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown::after {
+            content: " ";
+            position: absolute;
+            border: 1.5px solid #77B6EA;
+            border-right: 0;
+            border-top: 0;
+            display: block;
+            height: 0.5em;
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+            width: 0.5em;
+            right: 18px;
+            top: 18px; }
+          .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown .k-dropdown-title {
+            padding: 0em; }
+          .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown:hover > .k-dropdown {
+            display: block; }
+        .k-nav.vertical .k-nav-list .k-nav-item .k-dropdown {
+          left: 8em;
+          top: -.25em; }
   .k-nav .k-logo {
     display: flex;
     align-items: center;
