@@ -268,7 +268,7 @@ body {
   .k-nav > .k-container {
     display: flex;
     flex-direction: row; }
-  .k-nav.sticky {
+  .k-nav.sticky, .k-nav.vertical {
     position: fixed;
     top: 0;
     left: 0;
@@ -292,25 +292,17 @@ body {
     max-width: 8em;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 150;
     align-items: center;
-    justify-content: center;
-    box-sizing: border-box; }
+    justify-content: center; }
     .k-nav.vertical .k-logo {
       padding: .75em .5em;
       align-items: stretch; }
     .k-nav.vertical .k-nav-list {
       flex-direction: column; }
       .k-nav.vertical .k-nav-list .k-nav-item {
-        padding: .75em .5em;
-        text-align: center; }
+        padding: .75em .5em; }
         .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown {
-          padding: .75em 1em .75em .5em;
-          position: relative; }
+          padding: .75em 1em .75em .5em; }
           .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown::after {
             content: " ";
             position: absolute;
@@ -326,8 +318,6 @@ body {
             top: 18px; }
           .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown .k-dropdown-title {
             padding: 0em; }
-          .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown:hover > .k-dropdown {
-            display: block; }
         .k-nav.vertical .k-nav-list .k-nav-item .k-dropdown {
           left: 8em;
           top: -.25em; }

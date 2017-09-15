@@ -8,7 +8,7 @@ $nav-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2) !default;
 $nav-dark: #1e1f20 !default;
 $nav-dark-hover: $grey-dark !default;
 
-$nav-vert-width: 8em;
+$nav-vert-width: 8em !default;
 
 .vertical-body {
     margin-left: $nav-vert-width;
@@ -58,18 +58,13 @@ $nav-vert-width: 8em;
         }
     }
     &.vertical {
+        @extend .sticky;
         height: 100vh;
         max-width: $nav-vert-width;
         display: flex;
         flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 150;
         align-items: center;
         justify-content: center;
-        box-sizing: border-box;
 
         .k-logo {
             padding: .75em .5em;
@@ -80,11 +75,9 @@ $nav-vert-width: 8em;
 
             .k-nav-item {
                 padding: .75em .5em;
-                text-align: center;
 
                 &.is-dropdown {
                     padding: .75em 1em .75em .5em;
-                    position: relative;
 
                     &::after {
                         content: " ";
@@ -103,11 +96,7 @@ $nav-vert-width: 8em;
                     .k-dropdown-title {
                         padding: 0em;
                     }
-                    &:hover > .k-dropdown{
-                        display: block;
-                    }
                 }
-
                 .k-dropdown {
                     left: 8em;
                     top: -.25em;
