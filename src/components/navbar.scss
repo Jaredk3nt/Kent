@@ -10,6 +10,7 @@ $nav-dark-hover: $grey-dark !default;
 
 $nav-vert-width: 8em !default;
 
+// Modifier to allow for body seperate from the nav
 .vertical-body {
     margin-left: $nav-vert-width;
 }
