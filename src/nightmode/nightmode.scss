@@ -34,6 +34,12 @@ body {
         .k-nav {
             background-color: $nm-nav;
 
+            .k-logo {
+                &:hover {
+                    background-color: $nm-nav-hover;
+                }
+            }
+
             .k-nav-list {
                 .k-nav-item {
                     background-color: $nm-nav;
@@ -44,6 +50,11 @@ body {
                     }
                     .k-dropdown {
                         background-color: $nm-nav;
+                        .k-dropdown-item { 
+                            &:hover {
+                                background-color: $nm-nav-hover;
+                            }
+                        }
                     }
                 }
             }

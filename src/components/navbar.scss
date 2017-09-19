@@ -62,14 +62,16 @@ $nav-vert-width: 8em !default;
         @extend .sticky;
         height: 100vh;
         max-width: $nav-vert-width;
+        //width: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
 
         .k-logo {
-            padding: .75em .5em;
-            align-items:stretch;
+            padding: 1em .75em;
+
+            &:hover {
+                background-color: $nav-hover-color;
+            }
         }
         .k-nav-list {
             flex-direction: column;
@@ -101,6 +103,7 @@ $nav-vert-width: 8em !default;
                 .k-dropdown {
                     left: 8em;
                     top: -.25em;
+                    width: auto;
                 }
             }
         }
