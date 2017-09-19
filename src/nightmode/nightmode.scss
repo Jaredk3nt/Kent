@@ -11,6 +11,8 @@ $nm-input-background: #505354 !default;
 $nm-nav: #1e1f20 !default;
 $nm-nav-hover: $grey-dark !default;
 
+$nm-hover-background-color: $nm-dark;
+
 body {
     &.k-nightmode {
         background-color: $nm-background-color;
@@ -66,7 +68,7 @@ body {
         .k-button {
             background-color: $nm-background-color;
             &:hover {
-                color:$nm-text-color;
+                color:$white;
             }
 
             &.info {
@@ -105,30 +107,44 @@ body {
         .k-form {
             .k-field {
                 .k-input {
-                    background-color: $nm-input-background;
+                    background-color: $nm-dark;
                     border-color: $nm-dark;
-
+                    color: $nm-text-color;
                     &:focus {
                         background-color: $nm-light;
-                    }
-
-                    &:active {
-                        background-color: $nm-light;
+                        color: $nm-dark;
                     }
                 }
                 .k-select {
                     select {
-                        background-color: $nm-input-background;
+                        background-color: $nm-dark;
                         border-color: $nm-dark;
+                        color: $nm-text-color;
                     }
                     &::after {
-                        border-color: $nm-dark;
+                        border-color: $nm-text-color;
                     }
                     &:hover {
                         &::after {
                             border-color: $nm-primary;
                         }
                     }
+                }
+            }
+        }
+        .k-table {
+            &.striped {
+                tbody {
+                    tr {
+                        &:nth-child(odd) {
+                            background: $nm-input-background;
+                        }
+                    }
+                }
+            }
+            tr {
+                &:hover {
+                    background-color: $nm-hover-background-color !important;
                 }
             }
         }

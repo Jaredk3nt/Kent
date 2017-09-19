@@ -490,7 +490,7 @@ body.k-nightmode {
   body.k-nightmode .k-button {
     background-color: #37393A; }
     body.k-nightmode .k-button:hover {
-      color: #C7D3DD; }
+      color: #fff; }
     body.k-nightmode .k-button.info {
       background-color: #016FB9; }
       body.k-nightmode .k-button.info:hover {
@@ -512,18 +512,23 @@ body.k-nightmode {
       body.k-nightmode .k-button.bordered:hover {
         color: #fff; }
   body.k-nightmode .k-form .k-field .k-input, body.k-nightmode .k-form .k-field .k-textarea {
-    background-color: #505354;
-    border-color: #1e1f20; }
+    background-color: #1e1f20;
+    border-color: #1e1f20;
+    color: #C7D3DD; }
     body.k-nightmode .k-form .k-field .k-input:focus, body.k-nightmode .k-form .k-field .k-textarea:focus {
-      background-color: #dddede; }
-    body.k-nightmode .k-form .k-field .k-input:active, body.k-nightmode .k-form .k-field .k-textarea:active {
-      background-color: #dddede; }
+      background-color: #dddede;
+      color: #1e1f20; }
   body.k-nightmode .k-form .k-field .k-select select {
-    background-color: #505354;
-    border-color: #1e1f20; }
+    background-color: #1e1f20;
+    border-color: #1e1f20;
+    color: #C7D3DD; }
   body.k-nightmode .k-form .k-field .k-select::after {
-    border-color: #1e1f20; }
+    border-color: #C7D3DD; }
   body.k-nightmode .k-form .k-field .k-select:hover::after {
     border-color: #537FA3; }
+  body.k-nightmode .k-table.striped tbody tr:nth-child(odd) {
+    background: #505354; }
+  body.k-nightmode .k-table tr:hover {
+    background-color: #1e1f20 !important; }
 
 /*# sourceMappingURL=kent.css.map */
