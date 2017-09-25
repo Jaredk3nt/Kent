@@ -7,6 +7,9 @@ body {
   width: 100%;
   margin: 0em; }
 
+a:visited {
+  color: #4a4a4a; }
+
 .k-container {
   margin: 0 auto;
   width: 70%;
@@ -255,7 +258,7 @@ body {
       text-align: center; }
 
 .vertical-body {
-  margin-left: 8em; }
+  margin-left: 12em; }
 
 .k-nav {
   background-color: #fff;
@@ -289,19 +292,28 @@ body {
         background-color: #1e1f20; }
   .k-nav.vertical {
     height: 100vh;
-    max-width: 8em;
+    max-width: 12em;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .k-nav.vertical .k-nav-head {
+      width: 100%; }
     .k-nav.vertical .k-logo {
-      padding: 1em .75em; }
+      padding: 2.5em 2em; }
       .k-nav.vertical .k-logo:hover {
-        background-color: #E8EEF2; }
+        background-color: #fff; }
     .k-nav.vertical .k-nav-list {
-      flex-direction: column; }
+      flex-direction: column;
+      width: 100%; }
       .k-nav.vertical .k-nav-list .k-nav-item {
-        padding: .75em .5em; }
+        padding: .75em .5em .75em 2em; }
+        .k-nav.vertical .k-nav-list .k-nav-item:hover {
+          border-left: #b7cad6 solid 2px; }
+        .k-nav.vertical .k-nav-list .k-nav-item.active-tab {
+          border-left: #77B6EA solid 3px; }
         .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown {
-          padding: .75em 1em .75em .5em; }
+          padding: .75em 1em .75em 2em; }
           .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown::after {
             content: " ";
             position: absolute;
@@ -318,9 +330,18 @@ body {
           .k-nav.vertical .k-nav-list .k-nav-item.is-dropdown .k-dropdown-title {
             padding: 0em; }
         .k-nav.vertical .k-nav-list .k-nav-item .k-dropdown {
-          left: 8em;
-          top: -.25em;
+          left: calc(12em - 2px);
+          top: -.15em;
           width: auto; }
+    .k-nav.vertical .k-nav-footer {
+      align-self: flex-end;
+      width: 100%;
+      padding: 0em 0em 2em 0em; }
+      .k-nav.vertical .k-nav-footer .footer-item {
+        display: block;
+        padding: .25em 0em .25em 2em;
+        text-decoration: none;
+        color: #4a4a4a; }
   .k-nav .k-logo {
     display: flex;
     align-items: center;

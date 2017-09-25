@@ -7,6 +7,10 @@ body {
     margin: 0em;
 }
 
+a:visited {
+    color: $text-color;
+}
+
 .k-container {
     margin: 0 auto;
     width: 70%;

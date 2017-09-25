@@ -8,7 +8,7 @@ $nav-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2) !default;
 $nav-dark: #1e1f20 !default;
 $nav-dark-hover: $grey-dark !default;
 
-$nav-vert-width: 8em !default;
+$nav-vert-width: 12em !default;
 
 // Modifier to allow for body seperate from the nav
 .vertical-body {
@@ -62,25 +62,36 @@ $nav-vert-width: 8em !default;
         @extend .sticky;
         height: 100vh;
         max-width: $nav-vert-width;
-        //width: auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
+        .k-nav-head {
+            width: 100%;
+        }
         .k-logo {
-            padding: 1em .75em;
+            padding: 2.5em 2em;
 
             &:hover {
-                background-color: $nav-hover-color;
+                background-color: $nav-background-color;
             }
         }
         .k-nav-list {
             flex-direction: column;
+            width: 100%;
 
             .k-nav-item {
-                padding: .75em .5em;
+                padding: .75em .5em .75em 2em;
 
+                &:hover {
+                    border-left: darken($nav-hover-color, 15%) solid 2px;
+                }
+                &.active-tab {
+                    border-left: $primary solid 3px;
+                }
                 &.is-dropdown {
-                    padding: .75em 1em .75em .5em;
+                    padding: .75em 1em .75em 2em;
 
                     &::after {
                         content: " ";
@@ -101,10 +112,23 @@ $nav-vert-width: 8em !default;
                     }
                 }
                 .k-dropdown {
-                    left: 8em;
-                    top: -.25em;
+                    left: calc(12em - 2px);
+                    top: -.15em;
                     width: auto;
                 }
+            }
+        }
+        .k-nav-footer {
+            align-self: flex-end;
+            width: 100%;
+            //display: flex;
+            padding: 0em 0em 2em 0em;
+
+            .footer-item {
+                display: block;
+                padding: .25em 0em .25em 2em;
+                text-decoration: none;
+                color: $text-color;
             }
         }
     }
